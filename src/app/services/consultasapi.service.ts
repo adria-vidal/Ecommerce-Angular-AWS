@@ -11,4 +11,11 @@ export class ConsultasapiService {
   getCategory(){
     return this.http.get(`https://api.escuelajs.co/api/v1/categories`);
   }
+  getProductsByCategory(id:number){
+    return this.http.get(`https://api.escuelajs.co/api/v1/categories/${id}/products`)
+  }
+  getSingleProduct(id: number){
+    return this.http.get(` https://api.escuelajs.co/api/v1/products/${id}`)
+
+  }
 }
