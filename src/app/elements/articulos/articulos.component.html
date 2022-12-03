@@ -1,8 +1,8 @@
 <app-navbar></app-navbar>
-<div class="container position-relative text-center py-5">
+<div class="container margin position-relative text-center py-5">
   <div class="row">
     <div class="col-xl-4 col-lg-6 col-md-8 col-sm-12 mt-3" *ngFor="let articulo of articulos">
-      <a href="detalleproducto/{{articulo.id}}">
+      <a href="detail/{{articulo.id}}">
         <div class="card m-2">
           <img src="{{articulo.images}}" class="card-img-top" height="300" alt="Product">
           <div class="card-body">
@@ -17,3 +17,5 @@
 
   </div>
 </div>
+<app-footer></app-footer>
+

@@ -4,6 +4,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { ArticulosComponent } from './articulos/articulos.component';
 import { DetailProductComponent } from './detail-product/detail-product.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -11,6 +12,7 @@ import { DetailProductComponent } from './detail-product/detail-product.componen
     CategoriesComponent,
     ArticulosComponent,
     DetailProductComponent,
+    FooterComponent,
   ],
   imports: [CommonModule],
   exports: [
@@ -18,6 +20,7 @@ import { DetailProductComponent } from './detail-product/detail-product.componen
     CategoriesComponent,
     ArticulosComponent,
     DetailProductComponent,
+    FooterComponent
   ],
 })
 export class ElementsModule {}

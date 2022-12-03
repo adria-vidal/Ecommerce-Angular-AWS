@@ -5,6 +5,7 @@ import { NavbarComponent } from './elements/navbar/navbar.component';
 import { CategoriesComponent } from './elements/categories/categories.component';
 import { ArticulosComponent } from './elements/articulos/articulos.component';
 import { DetailProductComponent } from './elements/detail-product/detail-product.component';
+import { FooterComponent } from './elements/footer/footer.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'categories', pathMatch: 'full' },
@@ -24,6 +25,11 @@ const routes: Routes = [
     path: 'detail/:id',
     component: DetailProductComponent,
   },
+  {
+    path: 'footer',
+    component: FooterComponent,
+  },
+
 ];
 
 @NgModule({
