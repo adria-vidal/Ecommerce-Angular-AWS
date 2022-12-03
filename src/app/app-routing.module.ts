@@ -6,6 +6,7 @@ import { CategoriesComponent } from './elements/categories/categories.component'
 import { ArticulosComponent } from './elements/articulos/articulos.component';
 import { DetailProductComponent } from './elements/detail-product/detail-product.component';
 import { FooterComponent } from './elements/footer/footer.component';
+import { AboutComponent } from './elements/about/about.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'categories', pathMatch: 'full' },
@@ -29,6 +30,11 @@ const routes: Routes = [
     path: 'footer',
     component: FooterComponent,
   },
+  {
+    path: 'about',
+    component: AboutComponent,
+  },
+
 
 ];
 
