@@ -3,18 +3,21 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { ArticulosComponent } from './articulos/articulos.component';
-
-
+import { DetailProductComponent } from './detail-product/detail-product.component';
 
 @NgModule({
   declarations: [
     NavbarComponent,
     CategoriesComponent,
-    ArticulosComponent
+    ArticulosComponent,
+    DetailProductComponent,
   ],
-  imports: [
-    CommonModule
+  imports: [CommonModule],
+  exports: [
+    NavbarComponent,
+    CategoriesComponent,
+    ArticulosComponent,
+    DetailProductComponent,
   ],
-  exports:[NavbarComponent,CategoriesComponent, ArticulosComponent]
 })
-export class ElementsModule { }
+export class ElementsModule {}

@@ -14,4 +14,8 @@ export class ConsultasapiService {
   getProductsByCategory(id:number){
     return this.http.get(`https://api.escuelajs.co/api/v1/categories/${id}/products`)
   }
+  getSingleProduct(id: number){
+    return this.http.get(` https://api.escuelajs.co/api/v1/products/${id}`)
+
+  }
 }
