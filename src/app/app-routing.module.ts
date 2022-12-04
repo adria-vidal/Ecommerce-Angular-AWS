@@ -11,6 +11,7 @@ import { ContactComponent } from './elements/contact/contact.component';
 import { RegisterComponent } from './elements/register/register.component';
 import { LoginComponent } from './elements/login/login.component';
 import { ProfileComponent } from './elements/profile/profile.component';
+import { NavShopComponent } from './shopping-cart/nav-shop/nav-shop.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'categories', pathMatch: 'full' },
@@ -53,6 +54,10 @@ const routes: Routes = [
   {
     path: 'profile',
     component: ProfileComponent,
+  },
+  {
+    path: 'nav-shop',
+    component: NavShopComponent,
   },
 
 
