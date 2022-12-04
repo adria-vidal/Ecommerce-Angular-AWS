@@ -6,6 +6,9 @@ import { ArticulosComponent } from './articulos/articulos.component';
 import { DetailProductComponent } from './detail-product/detail-product.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { RegisterComponent } from './register/register.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,8 +18,10 @@ import { AboutComponent } from './about/about.component';
     DetailProductComponent,
     FooterComponent,
     AboutComponent,
+    ContactComponent,
+    RegisterComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule],
   exports: [
     NavbarComponent,
     CategoriesComponent,
@@ -24,6 +29,9 @@ import { AboutComponent } from './about/about.component';
     DetailProductComponent,
     FooterComponent,
     AboutComponent,
+    ContactComponent,
+    RegisterComponent,
+    FormsModule,
   ],
 })
 export class ElementsModule {}

@@ -1,0 +1,76 @@
+
+
+<!-- Page Header Start -->
+<div class="container-fluid bg-secondary mb-5">
+  <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 300px">
+      <h1 class="font-weight-semi-bold text-uppercase mb-5 text-warning">Contacto</h1>
+      <div class="d-inline-flex">
+          <p class="m-0"><a href="#" class="text-warning">Home</a></p>
+          <p class="m-0 px-2">-</p>
+          <p class="m-0">Contacto</p>
+      </div>
+  </div>
+</div>
+<!-- Page Header End -->
+
+
+<!-- Contact Start -->
+<div class="container pt-5">
+  <div class="text-center mb-4">
+      <h2 class="section-title px-5"><span class="px-2">Contacto Para Cualquier Consulta</span></h2>
+  </div>
+  <div class="row px-xl-5">
+      <div class="col-lg-7 mb-5">
+          <div class="contact-form">
+              <div id="success"></div>
+              <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                  <div class="control-group mt-4">
+                      <input type="text" class="form-control" id="name" placeholder="Nombre"
+                          required="required" data-validation-required-message="Please enter your name" />
+                      <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="control-group">
+                      <input type="email" class="form-control" id="email" placeholder="Email"
+                          required="required" data-validation-required-message="Please enter your email" />
+                      <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="control-group">
+                      <input type="text" class="form-control" id="subject" placeholder="Asunto"
+                          required="required" data-validation-required-message="Please enter a subject" />
+                      <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="control-group">
+                      <textarea class="form-control" rows="6" id="message" placeholder="Mensaje"
+                          required="required"
+                          data-validation-required-message="Please enter your message"></textarea>
+                      <p class="help-block text-danger"></p>
+                  </div>
+                  <div>
+                      <button class="btn btn-warning py-2 px-4" type="submit" id="sendMessageButton">Enviar
+                          Mensaje</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+      <div class="col-lg-5 mb-5">
+          <div class="d-flex flex-column mb-3 mt-4">
+              <h5 class="font-weight-semi-bold mb-3">OFICINA</h5>
+              <p>
+                <i class="bi bi-geo-alt"></i> C/ Fundació Vicent Ferrer, 6. Gandia
+              </p>
+              <p>
+                <i class="bi bi-envelope"></i> urbalab@gandia.org
+              </p>
+              <p>
+                <i class="bi bi-telephone"></i> +34 96 295 96 97
+              </p>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Contact End -->
+
+
+
+<app-footer></app-footer>
+
