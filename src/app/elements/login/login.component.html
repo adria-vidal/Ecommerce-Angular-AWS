@@ -1,0 +1,46 @@
+<app-navbar></app-navbar>
+<div class="container my-5">
+  <div class="row d-flex margin align-items-center justify-content-center">
+
+    <div class="col-md-6">
+
+      <div class="card px-3 py-5">
+        <form [formGroup]="formLogin" (ngSubmit)="onSubmit()">
+          <span class="circle"><i class="fa fa-check"></i></span>
+
+          <h5 class="mt-3">Inicio de Sesión</h5>
+          <small class="mt-2 text-muted">Entra en tu cuenta para ver tus productos favoritos y novedades</small>
+          <hr>
+          <div>
+            <i class="fa fa-envelope"></i>
+            <input type="email" class="form-control" formControlName="email" placeholder="Email ">
+          </div>
+
+          <div class="form-input">
+            <i class="fa fa-lock"></i>
+            <input type="text" class="form-control" formControlName="password" placeholder="Password">
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 col-sm-12 d-flex justify-content-center">
+              <button type="submit" class="btn btn-signup">Iniciar Sesión</button>
+
+            </div>
+            <div class="col-lg-6 col-sm-12 d-flex justify-content-center margin-sm">
+              <div class="google-btn">
+                <div class="google-icon-wrapper">
+                  <img class="google-icon"
+                    src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" />
+                </div>
+                <p class="btn-text" (click)="onClick()"><b>Sign in with google</b></p>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-4">
+            <span>¿No eres miembro todavía?</span>
+            <a href="register" class="text-decoration-none text-warning"> Regístrate</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
