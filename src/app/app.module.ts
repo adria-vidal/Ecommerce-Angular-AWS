@@ -9,6 +9,7 @@ import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
+import { ShoppingCartModule } from './shopping-cart/shopping-cart.module';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
   imports: [
     BrowserModule,
     ElementsModule,
+    ShoppingCartModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
