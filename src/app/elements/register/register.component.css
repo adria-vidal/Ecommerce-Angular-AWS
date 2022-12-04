@@ -6,6 +6,9 @@ body {
 
 }
 
+.margin{
+  margin-top: 12%;
+}
 .wrap {
   padding: 5%;
   background: rgba(0, 0, 0, .5);
@@ -197,7 +200,6 @@ body {
 }
 
 .circle {
-
   height: 20px;
   width: 20px;
   display: flex;
@@ -227,7 +229,6 @@ body {
 .form-control {
 
   height: 50px;
-  background-color: #1c1e21;
   text-indent: 24px;
   font-size: 15px;
 
@@ -254,9 +255,17 @@ body {
   color: #141e30;
 }
 
-.signup {
-  height: 50px;
+.btn-register {
+  width: 184px;
+  height: 42px;
+  background-color: #ffb546;
+  border-radius: 2px;
+  box-shadow: 0 3px 4px 0 rgba(255, 178, 54, 0.583);
+  color: black;
   font-size: 14px;
+  letter-spacing: 0.2px;
+  font-weight: bold;
+  font-family: "Roboto";
 }
 
 

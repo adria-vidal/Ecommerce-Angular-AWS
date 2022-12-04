@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+
+body {
+  background-color: #535fe6;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.margin {
+  margin-top: 12%;
+}
+
+.height {
+  height: 100vh;
+}
+
+.card {
+  border: none;
+  padding: 20px;
+  background-color: #1c1e21;
+  color: #fff;
+
+}
+
+.circle {
+
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffb546;
+  color: #fff;
+  font-size: 10px;
+  border-radius: 50%;
+}
+
+.form-input {
+
+  position: relative;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.form-input i {
+
+  position: absolute;
+  font-size: 18px;
+  top: 15px;
+  left: 10px;
+}
+
+.form-control {
+
+  height: 50px;
+  background-color: #1c1e21;
+  text-indent: 24px;
+  font-size: 15px;
+
+
+}
+
+.form-control:focus {
+
+  background-color: #25272a;
+  box-shadow: none;
+  color: #fff;
+  border-color: #e7be4f;
+}
+
+.form-check-label {
+  margin-top: 2px;
+  font-size: 14px;
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+
+.google-btn {
+  border: none;
+  width: 184px;
+  height: 42px;
+  background-color: #ffb546;
+  border-radius: 2px;
+  box-shadow: 0 3px 4px 0 rgba(255, 178, 54, 0.583);
+}
+
+.google-btn .google-icon-wrapper {
+  position: absolute;
+  margin-top: 1px;
+  margin-left: 1px;
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.google-btn .google-icon {
+  position: absolute;
+  margin-top: 11px;
+  margin-left: 11px;
+  width: 18px;
+  height: 18px;
+}
+
+.google-btn .btn-text {
+  float: right;
+  margin: 11px 11px 0 0;
+  font-weight: bold;
+  color: black;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  font-family: "Roboto";
+}
+
+.btn-signup {
+  width: 184px;
+  height: 42px;
+  background-color: #ffb546;
+  border-radius: 2px;
+  box-shadow: 0 3px 4px 0 rgba(255, 178, 54, 0.583);
+  color: black;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  font-weight: bold;
+  font-family: "Roboto";
+}
+
+
+.google-btn:hover {
+  box-shadow: 0 0 6px #f4bc42;
+}
+
+.google-btn:active {
+  background: #f2d188;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+
+.custom-class {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .margin-sm {
+    margin-top: 2%;
+  }
+}
