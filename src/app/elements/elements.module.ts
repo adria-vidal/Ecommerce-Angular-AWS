@@ -10,6 +10,7 @@ import { ContactComponent } from './contact/contact.component';
 import { RegisterComponent } from './register/register.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { LoginComponent } from './login/login.component';
     ContactComponent,
     RegisterComponent,
     LoginComponent,
+    ProfileComponent,
   ],
   imports: [CommonModule, FormsModule, ReactiveFormsModule],
   exports: [
@@ -34,7 +36,8 @@ import { LoginComponent } from './login/login.component';
     ContactComponent,
     RegisterComponent,
     FormsModule,
-    LoginComponent
+    LoginComponent,
+    ProfileComponent
   ],
 })
 export class ElementsModule {}
