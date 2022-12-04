@@ -54,7 +54,6 @@ body {
 .form-control {
 
   height: 50px;
-  background-color: #1c1e21;
   text-indent: 24px;
   font-size: 15px;
 
@@ -73,8 +72,6 @@ body {
   margin-top: 2px;
   font-size: 14px;
 }
-
-
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:500);
 
