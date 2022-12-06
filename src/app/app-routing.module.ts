@@ -13,6 +13,9 @@ import { LoginComponent } from './elements/login/login.component';
 import { ProfileComponent } from './elements/profile/profile.component';
 import { NavShopComponent } from './shopping-cart/nav-shop/nav-shop.component';
 
+
+
+
 const routes: Routes = [
   { path: '', redirectTo: 'categories', pathMatch: 'full' },
   {
@@ -67,7 +70,8 @@ const routes: Routes = [
   declarations: [],
   imports: [
     CommonModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+
   ],
   exports:[RouterModule]
 })

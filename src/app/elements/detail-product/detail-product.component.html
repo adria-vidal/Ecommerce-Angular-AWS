@@ -2,16 +2,42 @@
 <div class="container">
   <div class="row margin py-5 g-5">
     <div class="col-12 col-lg-6">
-      <img src="{{articulos.images}}" class="m1 w-100 sliderMainImage" data-bs-toggle="modal"
+      <!-- <img src="{{articulos.images}}" class="m1 w-100 sliderMainImage" data-bs-toggle="modal"
         data-bs-target="#imageModal" alt="">
       <div>
         <img src="{{articulos.images[1]}}" width="300" class="m1 sliderThumb">
         <img src="{{articulos.images[2]}}" width="300" class="m1 sliderThumb">
+      </div> -->
+      <div class="container_carru">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="{{articulos.images[1]}}" class="d-block w-100" alt="Imagen">
+            </div>
+            <div class="carousel-item">
+              <img src="{{articulos.images[2]}}" class="d-block w-100" alt="Imagen">
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
+
+
+
     </div>
     <div class="col-12 col-lg-6">
       <h2 id="productName">
-        {{articulos}}
+        {{articulos.title}}
       </h2>
       <small class="text-muted">
         Identificador: {{articulos.id}}
@@ -55,22 +81,71 @@
                 <strong>Disponible en Tienda</strong>
               </button>
             </h2>
+
+
             <div id="collapseTwo" class="accordion-collapse collapse-show" aria-labelledby="headingTwo">
-              <div class="accordion-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, beatae. Lorem ipsum dolor sit amet.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, tempora!
-                <br />
-                <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eaque voluptate rem porro modi dicta
-                temporibus natus dolor laborum qui!
+              <div class="delivery-availability" id="delivery-availability-section">
+                <p>
+                  <span class="pdp-reinsurance-picto lower-picto">
+                    <img
+                      src="https://www.sephora.es/dw/image/v2/BCVW_PRD/on/demandware.static/-/Sites/default/dw3ad82463/reassurance/reass-c-c.png?q=75"
+                      alt="click and collect image" title="click and collect returns ">
+                  </span>
+                  <span class="pdp-reinsurance-wording">
+                    <span class="delivery-availability-block">
+                      <span class="store-availability-title">
+                        <strong>Recogida en 2H gratis No disponible</strong>
+                      </span>
+                        <a href="">Comprobar disponibilidad</a>
+                    </span>
+                  </span>
+                </p>
+                <p>
+                  <span class="pdp-reinsurance-picto lower-picto">
+                    <img
+                      src="https://www.sephora.es/dw/image/v2/BCVW_PRD/on/demandware.static/-/Sites/default/dw586dbb16/reassurance/Picto free delivery.png?q=75"
+                      alt="home delivery image" title="home delivery">
+                  </span>
+                  <span class="pdp-reinsurance-wording">
+                    <span class="delivery-availability-block home-delivery">
+                      <span class="availability-message">
+                        <strong>Entrega a domicilio</strong> a partir del <strong>12 Diciembre</strong>
+                      </span>
+                      <span class="availability-status instock">
+                        Disponible
+                      </span>
+                    </span>
+                  </span>
+                </p>
+                <p>
+                  <span class="pdp-reinsurance-picto">
+                    <img
+                      src="https://www.sephora.es/dw/image/v2/BCVW_PRD/on/demandware.static/-/Sites/default/dwabad01f7/reassurance/reass-return.png?q=75"
+                      alt="free returns image" title="free returns">
+                  </span>
+                  <span class="pdp-reinsurance-wording">
+                    Devoluciones gratis y sin límite
+                  </span>
+                </p>
+                <p>
+                  <span class="pdp-reinsurance-picto">
+                    <img
+                      src="https://www.sephora.es/dw/image/v2/BCVW_PRD/on/demandware.static/-/Sites/default/dwa38854c4/reassurance/reass-payment.png?q=75"
+                      alt="securised payment image" title="securised payment">
+                  </span>
+                  <span class="pdp-reinsurance-wording">
+                    Pago seguro con encriptado
+                  </span>
+                </p>
               </div>
             </div>
+
+
           </div>
         </div>
       </div>
     </div>
 
-    </div>
   </div>
-
-
+</div>
+<app-footer></app-footer>

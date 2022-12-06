@@ -11,6 +11,7 @@ export class ArticulosComponent implements OnInit {
   // claveCategory: any = sessionStorage.getItem('idCategory');
   articulos: any;
   id: any = null;
+  pag: any = undefined;
 
 
   constructor(
@@ -22,9 +23,9 @@ export class ArticulosComponent implements OnInit {
     // this.consulta.getProductsByCategory(this.claveCategory).subscribe((result) => {
     //   this.articulos = result;
     //   console.log(result);
-    
+    this.pag = this._route.snapshot.paramMap.get('pag');
     this.id = this._route.snapshot.paramMap.get('id');
-    this.consulta.getProductsByCategory(this.id)
+    this.consulta.getProductsByCategory(this.id,this.pag)
     .subscribe(result => this.articulos = result)
     console.log(this.articulos);
 
