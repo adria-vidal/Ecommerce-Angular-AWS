@@ -2,3 +2,39 @@
 {
   margin-top: 5%;
 }
+p{
+  color: black;
+  text-decoration: none;
+}
+.card{
+  transform: scale(var(--escala, 1));
+  transition: transform 0.5s;
+}
+.card:hover{
+  --escala: 1.05;
+  cursor:pointer;
+}
+.card-body {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #b56e02d2 40%, #FFC39E 100%);
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+  text-decoration: underline;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+  text-decoration: underline;
+
+}

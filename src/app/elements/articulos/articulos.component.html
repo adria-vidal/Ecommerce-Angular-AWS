@@ -5,17 +5,30 @@
       <a href="detail/{{articulo.id}}">
         <div class="card m-2">
           <img src="{{articulo.images}}" class="card-img-top" height="300" alt="Product">
-          <div class="card-body">
-            <p class="card-text fw-bold">
+          <div class="card-body ">
+            <p class=" card_title ">
               {{articulo.title}}
             </p>
-            <small class="text-secondary">{{articulo.price}} €</small>
+            <small class=" card_text ">{{articulo.price}} €</small>
           </div>
         </div>
       </a>
     </div>
 
   </div>
+  <!-- <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled">
+        <a class="page-link" href="#" tabindex="-1">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="articulos/1">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav> -->
 </div>
 <app-footer></app-footer>
 
