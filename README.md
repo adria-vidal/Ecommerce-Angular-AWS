@@ -24,6 +24,7 @@ It's deployed on amazon web service (AWS)
 
 
 ## Tools and Technologies
+<p align="left">
  <img src="https://img.icons8.com/color/48/null/angularjs.png">
  <img src="https://img.icons8.com/color/48/null/html-5--v1.png">
  <img src="https://img.icons8.com/color/48/null/css3.png">
