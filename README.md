@@ -6,7 +6,7 @@ Developing a **ShoppingCart (Ecommerce) Application using Angular-10**.
 
 **Live Demo** : [Angular-shopping-cart](https://master.d12v1sc53xxq50.amplifyapp.com/categories)
 
-It's deployed on amazon web service (AWS)
+It's deployed on Amazon Web Service (AWS)
 
 
 ## Functionalities
