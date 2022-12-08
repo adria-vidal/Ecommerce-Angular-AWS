@@ -15,13 +15,13 @@ import { NavShopComponent } from './shopping-cart/nav-shop/nav-shop.component';
 import { canActivate, redirectUnauthorizedTo } from '@angular/fire/auth-guard';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'categories', pathMatch: 'full' },
   {
     //GUARD: para capar un componente y te envie a otro
     path: 'profile',
     component: ProfileComponent,
     ...canActivate(() => redirectUnauthorizedTo(['/login'])),
   },
-  { path: '', redirectTo: 'categories', pathMatch: 'full' },
   {
     path: 'navbar',
     component: NavbarComponent,
