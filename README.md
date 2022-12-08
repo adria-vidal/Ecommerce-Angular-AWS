@@ -1,4 +1,4 @@
-# Angular-15 - Ecommerce + Bootstrap + Firebase (Realtime Database) + Public API
+# Angular-15 - Ecommerce + Bootstrap + Firebase (Realtime Database) + Public API + AWS
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.2.
 
@@ -6,7 +6,9 @@ Developing a **ShoppingCart (Ecommerce) Application using Angular-10**.
 
 **Live Demo** : [Angular-shopping-cart](https://master.d12v1sc53xxq50.amplifyapp.com/categories)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.2.
+It's deployed on amazon web service (AWS)
+
+
 ## Functionalities
 
 1.  User Registration using Firebase Authentication (using Email/Password | Google Authentication )
@@ -24,14 +26,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Tools and Technologies
  <img src="https://img.icons8.com/color/48/null/angularjs.png">
  <img src="https://img.icons8.com/color/48/null/html-5--v1.png">
-
  <img src="https://img.icons8.com/color/48/null/css3.png">
  <img src="https://img.icons8.com/fluency/48/null/typescript--v2.png">
-
+<img src="https://img.icons8.com/color/48/null/amazon-web-services.png"/>
  <img src="https://img.icons8.com/color/48/null/nodejs.png">
  <img src="https://img.icons8.com/color/48/null/firebase.png">
  <img src="https://img.icons8.com/color/48/null/npm.png">
-  <img src="https://img.icons8.com/color/48/null/git.png">
+ <img src="https://img.icons8.com/color/48/null/git.png">
 
 
  
