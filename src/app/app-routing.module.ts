@@ -12,7 +12,11 @@ import { RegisterComponent } from './elements/register/register.component';
 import { LoginComponent } from './elements/login/login.component';
 import { ProfileComponent } from './elements/profile/profile.component';
 import { NavShopComponent } from './shopping-cart/nav-shop/nav-shop.component';
+
+import { CartComponent } from './shopping-cart/cart/cart.component';
+
 import { canActivate, redirectUnauthorizedTo } from '@angular/fire/auth-guard';
+
 
 const routes: Routes = [
   { path: '', redirectTo: 'categories', pathMatch: 'full' },
@@ -66,6 +70,11 @@ const routes: Routes = [
     path: 'nav-shop',
     component: NavShopComponent,
   },
+  {
+    path: 'cart',
+    component: CartComponent,
+  },
+
 ];
 
 @NgModule({
