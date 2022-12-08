@@ -46,6 +46,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - Animations
 - Dependency Injection
 - Routing & Navigation
+- Route Guards
 - Service Workers
 
 
@@ -62,7 +63,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 6.  Activate Firebase Authentication Providers
 
     `Authentication -> Sign-in-method -> Enable Email/Password & Google provider`
-7.  Configure your firebase configuration `src/environments/firebaseConfig.ts`
+7.  Configure your firebase configuration `src/environments/environment.ts`
 
     ```
     export const FireBaseConfig = {
@@ -86,7 +87,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ### Log in:
 <img src="./src/assets/img-readme/login.PNG">
 
-
+## Things to implement or improve:
+- Validation of form
+- Add products to cart
+- Display user information 
+- CRUD to api 
+- Price filter and search engine
+- Pagination
 
 
 ## Running unit tests

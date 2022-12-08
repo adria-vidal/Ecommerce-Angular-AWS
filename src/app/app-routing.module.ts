@@ -12,11 +12,15 @@ import { RegisterComponent } from './elements/register/register.component';
 import { LoginComponent } from './elements/login/login.component';
 import { ProfileComponent } from './elements/profile/profile.component';
 import { NavShopComponent } from './shopping-cart/nav-shop/nav-shop.component';
-
-
-
+import { canActivate, redirectUnauthorizedTo } from '@angular/fire/auth-guard';
 
 const routes: Routes = [
+  {
+    //GUARD: para capar un componente y te envie a otro
+    path: 'profile',
+    component: ProfileComponent,
+    ...canActivate(() => redirectUnauthorizedTo(['/login'])),
+  },
   { path: '', redirectTo: 'categories', pathMatch: 'full' },
   {
     path: 'navbar',
@@ -62,17 +66,11 @@ const routes: Routes = [
     path: 'nav-shop',
     component: NavShopComponent,
   },
-
-
 ];
 
 @NgModule({
   declarations: [],
-  imports: [
-    CommonModule,
-    RouterModule.forRoot(routes),
-
-  ],
-  exports:[RouterModule]
+  imports: [CommonModule, RouterModule.forRoot(routes)],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
